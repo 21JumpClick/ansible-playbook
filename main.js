@@ -14,6 +14,7 @@ async function main() {
         const key = core.getInput("key")
         const private_key = core.getInput("private-key")
         const inventory = core.getInput("inventory")
+        const inventory_file = core.getInput("inventory_file")
         const vaultPassword = core.getInput("vault_password")
         const knownHosts = core.getInput("known_hosts")
         const options = core.getInput("options")
@@ -72,6 +73,11 @@ async function main() {
             core.saveState("inventoryFile", inventoryFile)
             cmd.push("--inventory-file")
             cmd.push(inventoryFile)
+        }
+
+        if (inventory_file) {
+            cmd.push("--inventory-file")
+            cmd.push(inventory_file)
         }
 
         if (vaultPassword) {
