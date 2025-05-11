@@ -1,4 +1,4 @@
-name: Ansible Playwright
+name: Ansible Playbook
 description: Execute Ansible playbook on selected hosts
 branding:
   color: red
@@ -24,6 +24,9 @@ inputs:
     required: false
   inventory:
     description: Custom content to write into hosts
+    required: false
+  inventory_file:
+    description: Custom inventory file
     required: false
   vault_password:
     description: The password used for decrypting vaulted files
