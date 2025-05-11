@@ -8,7 +8,7 @@ Should work on any OS, if `ansible-playbook` command is available in `PATH`.
 
 ```yaml
 - name: Run playbook
-  uses: 21JumpClick/ansible-playbook@1.0.2
+  uses: 21JumpClick/ansible-playbook@1.0.1
   with:
     # Required, playbook filepath
     playbook: deploy.yml
