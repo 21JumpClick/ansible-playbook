@@ -1,4 +1,4 @@
-name: Ansible Playbook
+name: Ansible Playbook executor
 description: Execute Ansible playbook on selected hosts
 branding:
   color: red
