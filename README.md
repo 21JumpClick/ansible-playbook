@@ -8,7 +8,7 @@ Should work on any OS, if `ansible-playbook` command is available in `PATH`.
 
 ```yaml
 - name: Run playbook
-  uses: aimerib/ansible-playwright@v2
+  uses: 21JumpClick/ansible-playbook@1.0.2
   with:
     # Required, playbook filepath
     playbook: deploy.yml
@@ -16,6 +16,8 @@ Should work on any OS, if `ansible-playbook` command is available in `PATH`.
     directory: ./
     # Optional, SSH private key
     key: ${{secrets.SSH_PRIVATE_KEY}}
+    # Optional, inventory file
+    inventory_file: .ansible/inventory
     # Optional, literal inventory file contents
     inventory: |
       [all]
